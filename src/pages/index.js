@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Story from "../components/Home/story.js"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,7 +10,7 @@ const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Background img={data.img.childImageSharp.fluid} title="Your party site" styleClass="birthday-cake"/>
-    
+    <Story/>
   </Layout>
 );
 
