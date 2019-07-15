@@ -44,5 +44,10 @@ h1, h2, h3, h4, h5, h6{
 
 .btn-yellow:hover{
   background: var(--mainYellow);
-  color: var(--mainBrown;)
+  color: var(--mainBrown);
+}
+
+.footer{
+  background: var(--mainDark);
+  
 }
