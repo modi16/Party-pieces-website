@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Background from "../components/Global/background.js";
 import Products from "../components/Home/products";
+import Services from "../components/Home/Services";
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = ({data}) => (
     <Background img={data.img.childImageSharp.fluid} title="Your party site" styleClass="birthday-cake"/>
     <Story/>
     <Products items={data.menu}/>
+    <Services/>
   </Layout>
 );
 
