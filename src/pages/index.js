@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import Background from "../components/Global/background.js";
 import Products from "../components/Home/products";
 import Services from "../components/Home/Services";
+import Contact from "../components/Home/Contact";
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = ({data}) => (
     <Story/>
     <Products items={data.menu}/>
     <Services/>
+    <Contact/>
   </Layout>
 );
 
