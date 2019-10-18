@@ -8,7 +8,13 @@ export default function Service({service}) {
             <div className="card-body text-center">
                 <h6>{service.title}</h6>
                 <h6>${service.price}</h6>
-                <button className="btn btn-yellow mt-3 text-capitalize"> Cart</button>
+                <button className="btn btn-yellow mt-3 text-capitalize snipcart-add-item"  
+                    data-item-id={service.id}
+                    data-item-name={service.title}
+                    data-item-price={service.price}
+                    data-item-image={service.image.fluid.src}
+                    data-item-url="/."
+                    > Cart</button>
             </div>
         </div>
     </div>
